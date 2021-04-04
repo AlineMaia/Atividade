@@ -1,0 +1,13 @@
+programa
+{
+	inteiro cont = 1, res
+	funcao inicio()
+	{
+	enquanto(cont <= 10){
+		res = 5 * cont
+		escreva("5 x ", cont, " = ",res, "\n")
+		cont ++
+	}
+		
+	}
+}
