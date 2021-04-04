@@ -1,0 +1,31 @@
+programa
+{
+	inteiro n1, n2, n3, res
+	funcao inicio()
+	{
+		escreva("Digite o primeiro valor: ")
+		leia(n1)
+		limpa()
+
+		escreva("Digite o segundo valor: ")
+		leia(n2)
+		limpa()
+
+		escreva("Digite o terceiro valor: ")
+		leia(n3)
+		limpa()
+
+		se(((n1 > n2) e (n2 > n3)) ou ((n2 > n1) e (n1 > n3))){
+			res = n1 + n2
+			escreva("A soma dos dois maiores, ", n1, " e ", n2, " é igual a: ", res)
+		}
+		senao se(((n2 > n1) e (n3 > n1)) ou ((n3 > n2) e (n2 > n1))){
+			res = n2 + n3
+			escreva("A soma dos dois maiores, ", n2, " e ", n3, " é igual a: ", res)
+		}
+		senao se(((n1 > n3) e (n3 > n2)) ou ((n3 > n1) e (n1 > n2))){
+			res = n1 + n3
+			escreva("A soma dos dois maiores, ", n1, " e ", n3, " é igual a: ", res)
+		}
+	}
+}
