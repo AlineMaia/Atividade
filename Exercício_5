@@ -1,0 +1,41 @@
+programa
+{
+	real n1, n2, res
+	inteiro opc
+	cadeia conta
+	funcao inicio()
+	{
+		escreva("Digite o primeiro valor: ")
+		leia(n1)
+		limpa()
+		
+		escreva("Digite o segundo valor: ")
+		leia(n2)
+		limpa()
+		
+		escreva("Escolha a operação desejada: \n 1. Multiplicação \n 2. Divisão \n 3. Soma \n 4. Subtração \n")
+		leia (opc)
+		limpa()
+
+		se(opc == 1){
+			res = n1 * n2
+			conta = "multiplicação"
+		}
+		senao se(opc == 2){
+			res = n1 / n2
+			conta = "divisão"
+		}
+		senao se(opc == 3){
+			res = n1 + n2
+			conta = "soma"
+		}
+		senao se(opc == 4){
+			res = n1 - n2
+			conta = "subtração"
+		}
+		senao{
+			escreva("Houve um erro, tente novamente")
+		}
+		escreva("O resultado da ", conta, " de ", n1, " e ", n2, " é: ", res)
+	}
+}
